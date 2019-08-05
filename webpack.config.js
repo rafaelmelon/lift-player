@@ -23,8 +23,11 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Custom template',
+      // template: path.join(__dirname, 'src/index.template.html'),
+      filename: path.join(__dirname, 'src/index.template.html'),
       hash: true
-    })
+    }),
   ],
   resolve: {
     modules: [path.resolve('./src'), path.resolve('./node_modules')]
