@@ -1,3 +1,8 @@
-import modules from './modules';
+import HelloWorld from 'components/HelloWorld';
+import 'main.css';
 
-modules();
+const main = async () => {
+  HelloWorld();
+};
+
+main().then(() => console.log('Started'));
